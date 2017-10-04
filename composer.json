@@ -1,0 +1,17 @@
+{
+  "name": "Steven-Robinson/pattern-examples",
+  "description": "Design pattern examples in PHP",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Steven Robinson",
+      "email": "steverobinson1978@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
