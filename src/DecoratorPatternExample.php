@@ -11,10 +11,17 @@ class DecoratorPatternExample
     {
         $statement = new Statement();
 
+        $this->outputStatementDetails($statement);
+
         $statementWithInsurance = new StatementInsuranceAddon($statement);
 
-        echo $statementWithInsurance->getDescription() . "\n";
+        $this->outputStatementDetails($statementWithInsurance);
+    }
 
-        echo 'Total Amount: ' . $statementWithInsurance->getTotalAmount() . "\n";
+    private function outputStatementDetails($statement)
+    {
+        echo $statement->getDescription() . "\n";
+
+        echo 'Total Amount: ' . $statement->getTotalAmount() . "\n";
     }
 }

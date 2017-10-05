@@ -13,7 +13,7 @@ class Statement implements StatementInterface
     {
         return array_sum([
             $this->getRentalAmount(),
-            $this->getSupplmentalAmount(),
+            $this->getSupplementalAmount(),
         ]);
     }
 
@@ -22,7 +22,7 @@ class Statement implements StatementInterface
         return 200;
     }
 
-    protected function getSupplmentalAmount(): int
+    protected function getSupplementalAmount(): int
     {
         return 100;
     }
